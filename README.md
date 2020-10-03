@@ -1,0 +1,2 @@
+# django-example
+django website
