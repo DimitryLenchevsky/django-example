@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Заголовок страницы</title>
+  <title>{% block title %}{% endblock %}</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
   {% load static %}
@@ -26,17 +26,18 @@
             <h1>{% include 'mainApp/includes/some_html.html' %}</h1>
             {% block content %}
             {% endblock %}
-            <p>
-                <a href='/' class='btn btn-success btn-lg'>Главная страница</a>
-                <a href='/news' class='btn btn-primary btn-lg'>Новости</a>
-                <a href='/contact' class='btn btn-info btn-lg'>Контакты</a>
-            </p>
         </div>
     </div>
     <div class='container'>
     <img src='{% static "mainApp/image/f069073f396a99d82e9958dd70ac1939.jpeg" %}' class='img-thumbnail'>
         <hr>
             Все права защищены
+
+        <p>
+            <a href='/' class='btn btn-success btn-lg'>Главная страница</a>
+            <a href='/news' class='btn btn-primary btn-lg'>Новости</a>
+            <a href='/contact' class='btn btn-info btn-lg'>Контакты</a>
+        </p>
     </div>    
 </body>
 </html>
