@@ -1,9 +1,15 @@
 {% extends 'mainApp/wrapper.html' %}
 
+{% block title %}
+{{ title }}
+{% endblock %}
+
 {% block content %}
-<h1>Главная страница</h1>
-<p>Присто текст!</p>
-
-{% include 'mainApp/includes/some_html.html' %}
-
+    <h1>Главная страница</h1>
+    {% for el in tasks %}
+        <div class='alert alert-warning mt-2'>
+            <h3>{{ el.title }}</h3>
+            <p>{{ el.task }}</p>
+        </div>
+    {% endfor %}
 {% endblock %}
