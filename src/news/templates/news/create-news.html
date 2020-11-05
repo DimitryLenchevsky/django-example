@@ -3,5 +3,14 @@
 Создать статью
 {% endblock %}
 {% block content %}
-<h2>Создадим новость тут</h2>
+<h2>Создать новость</h2>
+<form action='' method='post'>
+    {% csrf_token %}
+    <p>Название статьи: </p>{{ form.title }}<br>
+    <br>
+    <p>Текст статьи: </p>{{ form.body }}<br>
+    <br>
+    <p>Дата: </p>{{ form.date }}<br>
+    <button type='submit' class='btn btn-success'>Создать</button>
+</form>
 {% endblock %}

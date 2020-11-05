@@ -7,4 +7,4 @@ class CreateNews(CreateView):
     model = models.Articles
     template_name = 'news/create-news.html'
     fields = ('title', 'body')
-    success_url = 'news/posts.html'
+    success_url = '/news'
