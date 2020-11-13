@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'webexample',
     'mainApp',
     'news',
-    'main'
+    'main',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
