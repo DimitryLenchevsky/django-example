@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'mainApp',
     'news',
     'main',
-    'rest_framework'
+    'rest_framework',
+    'cars'
 ]
 
 MIDDLEWARE = [

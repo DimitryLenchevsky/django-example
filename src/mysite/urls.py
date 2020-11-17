@@ -24,7 +24,8 @@ urlpatterns = [
     path('mainapp/', include('mainApp.urls')),
     path('news/', include('news.urls')),
     path('', include('main.urls')),
-    path('api-auth/', include('rest_framework.urls'))
+    path('api-auth/', include('rest_framework.urls')),
+    path('api/v1/cars/', include('cars.urls')),
 
 ] #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
