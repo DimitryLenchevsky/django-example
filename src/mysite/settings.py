@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     'news',
     'main',
     'rest_framework',
-    'cars'
+    'rest_framework.authtoken',
+    'cars',
+    'djoser'
 ]
 
 MIDDLEWARE = [

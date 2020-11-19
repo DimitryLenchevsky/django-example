@@ -26,6 +26,8 @@ urlpatterns = [
     path('', include('main.urls')),
     path('api-auth/', include('rest_framework.urls')),
     path('api/v1/cars/', include('cars.urls')),
+    path('api/v1/auth/', include('djoser.urls')),
+    path('api/v1/auth_token/', include('djoser.urls.authtoken')),
 
 ] #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
